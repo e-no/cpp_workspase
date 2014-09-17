@@ -9,20 +9,12 @@ class inu
         char    name[20];
         int     age;
     public:
-        void setname(char* inuname);
-        void setage(int inuage);
+        inu(){ cout << "wanwan" << endl; }//コンストラクタ
+        void setname(char* inuname){ strcpy(name,inuname); }//名前設定関数
+        void setage(int inuage){ if(inuage<0)    age = 0; else age = inuage; }//年齢設定関数
         void display();
 };
 
-void inu::setname(char* inuname)
-{
-    strcpy(name,inuname);
-}
-
-void inu::setage(int inuage)
-{
-    if(inuage<0)    age = 0; else age = inuage;
-}
 
 void inu::display()
 {
@@ -33,8 +25,9 @@ void inu::display()
 int main()
 {
     inu tiwawa;
-
+/*
     tiwawa.setname("チワワ");
     tiwawa.setage(10);
     tiwawa.display();
+    */
 }
