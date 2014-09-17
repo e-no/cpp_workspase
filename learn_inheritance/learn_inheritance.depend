@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1410921717 source:c:\users\user\desktop\work\cpp_workspase\learn_inheritance\main.cpp
+	<iostream>
+	"string.h"
+
