@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1411122470 source:c:\users\user\desktop\work\cpp_workspase\learn_gc\main.cpp
+	<iostream>
+	<stdlib.h>
+
+1411120924 source:c:\users\user\desktop\work\cpp_workspase\learn_gc\main.c
+	<stdio.h>
+	<stdlib.h>
+

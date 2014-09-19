@@ -33,7 +33,7 @@ void InsSort(int num[ ], int gap, int n)
                 temp = num[j];                          /* —v‘f‚Ì“ü‚ê‘Ö‚¦ */
                 num[j] = num[j + gap];
                 num[j + gap] = temp;
-                ShowData(num, NUM_DATA);      /* “r’†Œo‰ß‚ð•\Ž¦ */
+                ShowData(num, NUM_DATA);     /* “r’†Œo‰ß‚ð•\Ž¦ */
             }
         }
     }
