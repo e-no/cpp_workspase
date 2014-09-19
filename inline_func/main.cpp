@@ -9,23 +9,23 @@ using namespace std;
 
 //ケース　１
 //static関数にinlineがついた場合
-static inline int inc(int *a)
+static inline int inca(int *a)
 {
   return (*a)++;
 }
 
 //ケース　２
 //inline なしで宣言された後、 inline 付きで定義された場合
-extern int inc(int *b);
+extern int incb(int *b);
 
-inline int inc(int *b)
+inline int incb(int *b)
 {
   return (*b)++;
 }
 
 //ケース　３
 // inline付きで定義された場合
-inline int inc(int *c)
+inline int incc(int *c)
 {
   return (*c)++;
 }
@@ -33,17 +33,24 @@ inline int inc(int *c)
 
 //ケース　４
 //extern と inline が同時に指定された場合
-extern inline int inc(int *d)
+extern inline int incd(int *d)
 {
   return (*d)++;
 }
 
 
+class Kitty {
 
-int main()
-{
+public:
+	int func(int x) {
+		return x + (int)(x * 0.05);
+	}
 
-    cout << "Hello world!" << endl;
+} obj ;
 
-    return 0;
+int main() {
+
+	cout << obj.func(100);
+
+	return 0;
 }
