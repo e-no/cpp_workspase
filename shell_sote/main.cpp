@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 #define NUM_DATA 20
 
 using namespace std;
@@ -29,7 +28,8 @@ void InsSort(int num[ ], int gap, int n)
         {
             if (num[j] <= num[j + gap])         /* j 番目とj + gap 番目と比較 */
                 break;
-            else{
+            else
+            {
                 temp = num[j];                          /* 要素の入れ替え */
                 num[j] = num[j + gap];
                 num[j + gap] = temp;
@@ -37,14 +37,14 @@ void InsSort(int num[ ], int gap, int n)
             }
         }
     }
-    printf("\n");        /* InsSort(  ) を抜ける時改行 */
+    cout <<"\n"<<endl;/* InsSort(  ) を抜ける時改行 */
 }
 
 /* n 個のデータの表示 */
 void ShowData(int num[ ], int n)
 {
     while(n--)     cout << *num++ <<" ";//printf("%2d  ", *num++);
-    printf("\n");
+    cout <<"\n"<<endl;
 }
 
 int main(void)
@@ -65,7 +65,7 @@ int main(void)
     cout << "after sort" << endl;
 
     ShowData(num, NUM_DATA);
-     cout <<"\n"<<endl;
+    cout <<"\n"<<endl;
 
     return 0;
 }
